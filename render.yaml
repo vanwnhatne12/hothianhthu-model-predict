@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: taixiu-ai-predictor
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        value: sk-5bae7cb92194432d88a6117675f474ae
+      - key: NODE_ENV
+        value: production
